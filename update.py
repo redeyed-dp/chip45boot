@@ -11,7 +11,7 @@ parser.add_argument("-f", "--file", help="firmware file")
 args = parser.parse_args()
 if not args.file or not args.port:
     print("Usage:")
-    print("update.py -f hexfile.hex -p /dev/ttyUSB0 [-b 19200]")
+    print("python3 update.py -f hexfile.hex -p /dev/ttyUSB0 [-b 19200]")
     exit()
 
 ser = serial.Serial()

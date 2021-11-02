@@ -98,7 +98,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if not args.file or not args.port:
         print("Usage:")
-        print("pyc45b.py -f hexfile.hex -p /dev/ttyUSB0 [-b 19200]")
+        print("python3 c45b.py -f hexfile.hex -p /dev/ttyUSB0 [-b 19200]")
         exit()
 
     ser = serial.Serial()
